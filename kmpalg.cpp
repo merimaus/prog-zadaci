@@ -304,8 +304,7 @@ int main()
 {
     int n = 0;
     char asd[100], barano[100];
-    strcpy(asd, "aabaacaadaabaaba");
-    strcpy(barano, "aaba");
+    cin >> asd >> barano;
     String text = asd;
     cout << text << endl;
 
@@ -327,7 +326,7 @@ int main()
     }
 
     int *sum = text.rabinKarpSum(barano);
-    n = sizeof(sum) / sizeof(sum[0]);
+    n = sizeof(sum) / sizeof(int);
     for (int i = 0; i < n + 2; i++)
     {
         cout << sum[i] << endl;
